@@ -3,14 +3,11 @@ import Slider from './Slider';
 
 const Header = () => {
   return (
-    <navbar>
-      <div className='carousel-container'>
-        <Slider />
-      </div>
+    <div style={{ height: '100vh' }}>
       <div className='navbar'>
         <div className='nav-brand'>
-          <h4>e-LECTR0</h4>
-          <span style={{ fontSize: '1.5rem' }}>.</span>
+          <h4>e-Lectro</h4>
+          <span style={{ fontSize: '1.5rem', color: 'skyblue' }}>.</span>
         </div>
         <div className='nav-links'>
           <a href='#'>Home</a>
@@ -30,7 +27,10 @@ const Header = () => {
           </a>
         </div>
       </div>
-    </navbar>
+      <div className='carousel-container'>
+        <Slider />
+      </div>
+    </div>
   );
 };
 
