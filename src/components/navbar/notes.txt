@@ -1,0 +1,1 @@
+Navbar secondary is for any other components that wants Navbar component rendered in that component as well. we dont use the primary navbar because it has hover effects which will not contrast since its color is white in other pages where the background color is default i.e white. So we use the secondary navbar which has color of black.

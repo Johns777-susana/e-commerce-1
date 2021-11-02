@@ -1,15 +1,14 @@
 import React from 'react';
-import Benefits from './components/Benefits';
-import Header from './components/Header';
-import ProductsShowcase from './components/ProductsShowcase';
+import HomeScreen from './screens/HomeScreen';
+import ProductsScreen from './screens/ProductsScreen';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <Header />
-      <ProductsShowcase />
-      <Benefits />
-    </>
+    <Router>
+      <Route path='/' component={HomeScreen} exact />
+      <Route path='/products' component={ProductsScreen} />
+    </Router>
   );
 }
 

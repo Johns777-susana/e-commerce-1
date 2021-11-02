@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Slider = () => {
   return (
@@ -16,7 +17,9 @@ const Slider = () => {
             classy
             <br /> headphones
           </h3>
-          <Button variant='light'>Start Shopping</Button>
+          <Link to='/products'>
+            <Button variant='light'>Start Shopping</Button>
+          </Link>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={5000}>
@@ -31,7 +34,9 @@ const Slider = () => {
             Play-Tech
             <br /> Consoles
           </h3>
-          <Button variant='light'>Get Yours</Button>
+          <Link to='/products'>
+            <Button variant='light'>Get Yours</Button>
+          </Link>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={5000}>
@@ -47,7 +52,9 @@ const Slider = () => {
             <br />
             smart phones
           </h3>
-          <Button variant='light'>View Collection</Button>
+          <Link to='/products'>
+            <Button variant='light'>View Collection</Button>
+          </Link>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
