@@ -15,7 +15,7 @@ const Footer = () => {
             <p>Providing customers best service available...</p>
             <div className='social-icons-container'>
               {socioIcons.map((icons) => (
-                <ul>
+                <ul key={icons.id}>
                   <li>
                     <a href={icons.url}>{icons.icon}</a>
                   </li>

@@ -18,7 +18,9 @@ const Slider = () => {
             <br /> headphones
           </h3>
           <Link to='/products'>
-            <Button variant='light'>Start Shopping</Button>
+            <Button variant='outline-dark' className='carousel-btn'>
+              Start Shopping
+            </Button>
           </Link>
         </Carousel.Caption>
       </Carousel.Item>
@@ -35,7 +37,9 @@ const Slider = () => {
             <br /> Consoles
           </h3>
           <Link to='/products'>
-            <Button variant='light'>Get Yours</Button>
+            <Button variant='outline-dark' className='carousel-btn'>
+              Get Yours
+            </Button>
           </Link>
         </Carousel.Caption>
       </Carousel.Item>
@@ -53,7 +57,9 @@ const Slider = () => {
             smart phones
           </h3>
           <Link to='/products'>
-            <Button variant='light'>View Collection</Button>
+            <Button variant='outline-dark' className='carousel-btn'>
+              View Collection
+            </Button>
           </Link>
         </Carousel.Caption>
       </Carousel.Item>

@@ -7,7 +7,7 @@ import NavbarSecondary from '../components/navbar/NavbarSecondary';
 
 const ProductScreen = () => {
   return (
-    <div className='product-screen-container'>
+    <div className='products-screen-container'>
       <NavbarSecondary />
       <div className='all-products-headers'>
         <a href='/'>

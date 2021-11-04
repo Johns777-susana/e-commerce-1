@@ -16,6 +16,7 @@ body {
 
 /*<-- Header Section*/
 .navbar {
+  font-family: 'Zen Maru Gothic', sans-serif;
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
@@ -59,11 +60,13 @@ body {
 .nav-brand {
   display: flex;
   align-items: baseline;
-  letter-spacing: 0.2rem;
 }
 
 .nav-brand h4 {
   color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
 }
 
 .home-link {
@@ -162,8 +165,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-
+  gap: 1.5rem;
   padding: 4rem 0 !important;
 }
 
@@ -178,20 +180,13 @@ body {
   font-family: 'Limelight', cursive;
   text-transform: capitalize;
   font-size: 2.5rem;
+  color: #fff;
 }
 
-.btn {
-  border-radius: 0px !important;
+.carousel-btn {
+  letter-spacing: 0.25rem;
   font-family: 'Montserrat', sans-serif;
   color: #fff !important;
-  font-weight: 600;
-  letter-spacing: 0.25rem;
-  background: transparent !important;
-}
-
-.btn:hover {
-  background-color: #fff !important;
-  color: #000 !important;
 }
 
 .carousel-indicators button {
@@ -220,14 +215,17 @@ body {
 
 .showcase-col h1 {
   font-size: 3.5rem !important;
+  color: #fff;
 }
 
 .showcase-col h5 {
   font-size: 2rem !important;
+  color: #fff;
 }
 
 .showcase-btn {
-  border: 1px solid #000;
+  letter-spacing: 0.25rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .showcase-1A {
@@ -267,11 +265,14 @@ body {
   background-position: top;
   padding-top: 6rem !important;
   padding-bottom: 6rem !important;
-  color: #000 !important;
+}
+
+.showcase-3B h5 {
+  color: #343a40 !important;
 }
 
 .showcase-3B-only-black-btn {
-  color: #000 !important;
+  color: #343a40 !important;
 }
 
 /*Benefits Part*/
@@ -418,7 +419,7 @@ body {
 }
 
 /*Product Screen Part*/
-.product-screen-container {
+.products-screen-container {
   font-family: 'Zen Maru Gothic', sans-serif;
   display: flex;
   flex-direction: column;
@@ -456,6 +457,7 @@ body {
 /*Products Part*/
 .products-container {
   position: relative;
+  cursor: pointer;
 }
 
 .products-container:hover {
@@ -491,4 +493,20 @@ body {
   gap: 0.5rem !important;
   justify-content: center !important;
   text-transform: uppercase !important;
+}
+
+/*Individual Product ShowCase*/
+.individual-product-container {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual Product Part*/
+.flex-row {
+  display: flex;
+  gap: 0.25rem;
+  align-items: baseline;
 }

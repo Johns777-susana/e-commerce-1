@@ -18,13 +18,13 @@ const NavbarSecondary = () => {
       </div>
       <div className='nav-icons-secondary'>
         <a href='#'>
-          <i class='fi fi-rr-search'></i>
+          <i className='fi fi-rr-search'></i>
         </a>
         <a href='#'>
-          <i class='fi fi-rr-user'></i>
+          <i className='fi fi-rr-user'></i>
         </a>
         <a href='#'>
-          <i class='fi fi-rr-shopping-cart'></i>
+          <i className='fi fi-rr-shopping-cart'></i>
         </a>
       </div>
     </div>

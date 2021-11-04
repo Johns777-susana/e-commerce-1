@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { BsArrowsFullscreen } from 'react-icons/bs';
 import { FiShoppingCart } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const Product = ({ product }) => {
   return (
@@ -19,9 +20,11 @@ const Product = ({ product }) => {
         <Button variant='outline-light' className='overlay-btns'>
           <FiShoppingCart /> Add
         </Button>
-        <Button variant='outline-dark' className='overlay-btns'>
-          <BsArrowsFullscreen /> View
-        </Button>
+        <Link to={`/${product._id}`} className='home-link'>
+          <Button variant='outline-light' className='overlay-btns'>
+            <BsArrowsFullscreen /> View
+          </Button>
+        </Link>
       </Card.Body>
     </Card>
   );
