@@ -27,7 +27,7 @@ const Slider = () => {
       <Carousel.Item interval={5000}>
         <img
           className='d-block slider-img'
-          src='https://images.unsplash.com/photo-1605901309584-818e25960a8f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1019&q=80'
+          src='https://images.unsplash.com/photo-1518908336710-4e1cf821d3d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1013&q=80'
           alt='Second slide'
         />
         <Carousel.Caption className='carousel-text'>
@@ -46,7 +46,7 @@ const Slider = () => {
       <Carousel.Item interval={5000}>
         <img
           className='d-block slider-img'
-          src='https://images.unsplash.com/photo-1580566052257-7b3b27c5d6d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80'
+          src='https://images.unsplash.com/photo-1510297182321-a75bdc5b1299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=902&q=80'
           alt='Third slide'
         />
         <Carousel.Caption className='carousel-text'>

@@ -6,7 +6,7 @@ const allProducts = [
     price: 20,
     desc: 'Unlike traditional, circular earbuds, the design of the EarPods is defined by the geometry of the ear. ... The EarPods also include a built-in remote that lets you adjust the volume, control the playback of music and video, and answer or end calls with a pinch of the cord.',
     category: 'earpods',
-    rating: 8,
+    rating: 2.5,
     numReviews: 15,
     countInStock: 19,
   },
@@ -23,7 +23,7 @@ const allProducts = [
   },
   {
     _id: 3,
-    name: 'boss quiet comfort 35 silver - bluetooth headphones',
+    name: 'boss quiet comfort 35 silver - bluetooth',
     image: '/images/boss-headphone.png',
     price: 165,
     desc: 'Bose headphones so great is that their crystal-clear sound quality. Enjoy the fine details your music has on these headphones from Bose. Some products, such as the Bose Quietcomfort 35 II, offer noise-cancelling capabilities.',
@@ -34,7 +34,7 @@ const allProducts = [
   },
   {
     _id: 4,
-    name: 'Nikon D7500 20.9MP DSLR Camera with AF-S DX NIKKOR',
+    name: 'Nikon D7500 20.9MP DSLR Camera with AF-S DX',
     image: '/images/camera.jpg',
     price: 699,
     desc: 'The Nikon Coolpix series are digital compact cameras produced in many variants: Superzoom, bridge, travel-zoom, miniature compact and waterproof/rugged cameras.',
@@ -56,7 +56,7 @@ const allProducts = [
   },
   {
     _id: 6,
-    name: 'Xbox 512GB SSD Console with Wireless Controller',
+    name: 'Xbox 512GB SSD Console - Wireless Controller',
     image: '/images/console.jpg',
     price: 260,
     desc: 'Great console with flexibility and best gaming experience',
@@ -111,7 +111,7 @@ const allProducts = [
   },
   {
     _id: 11,
-    name: 'Samsung Note 20 Pro',
+    name: 'Samsung Note 20 Pro SERIES',
     image: '/images/samsung-note20.jpg',
     price: 1160,
     desc: 'The phone comes with a 6.70-inch touchscreen display with a resolution of 1080x2400 pixels and an aspect ratio of 20:9. Samsung Galaxy Note 20 is powered by a 2.4GHz octa-core Samsung Exynos 990 processor that features 4 cores clocked at 2.4GHz and 4 cores clocked at 1.8GHz.',

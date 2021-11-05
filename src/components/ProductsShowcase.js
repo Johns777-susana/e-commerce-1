@@ -26,7 +26,7 @@ const ProductsShowcase = () => {
         </Row>
         <Row className='showcase-row pt-2 pb-3 px-2'>
           <Col className='showcase-1B showcase-col'>
-            <h5>Flashy Deals</h5>
+            <p>Flashy Deals</p>
             <Link to='/products'>
               <Button variant='outline-light' className='showcase-btn'>
                 Shop Now &#8594;
@@ -34,7 +34,7 @@ const ProductsShowcase = () => {
             </Link>
           </Col>
           <Col className='showcase-2B showcase-col'>
-            <h5>Best Products</h5>
+            <p>Best Products</p>
             <Link to='/products'>
               <Button variant='outline-light' className='showcase-btn'>
                 Shop Now &#8594;
@@ -42,7 +42,7 @@ const ProductsShowcase = () => {
             </Link>
           </Col>
           <Col className='showcase-3B showcase-col'>
-            <h5>All Products</h5>
+            <p>All Products</p>
             <Link to='/products'>
               <Button
                 variant='outline-light'

@@ -96,6 +96,7 @@ body {
 /*Navbar Secondary*/
 
 .navbar-secondary {
+  font-family: 'Zen Maru Gothic', sans-serif;
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
@@ -218,14 +219,18 @@ body {
   color: #fff;
 }
 
-.showcase-col h5 {
+.showcase-col p {
   font-size: 2rem !important;
   color: #fff;
+  font-weight: bold;
+  font-family: 'Zen Maru Gothic', sans-serif !important;
+  text-transform: capitalize;
 }
 
 .showcase-btn {
-  letter-spacing: 0.25rem;
+  letter-spacing: 3px;
   font-family: 'Montserrat', sans-serif;
+  border: none;
 }
 
 .showcase-1A {
@@ -267,7 +272,7 @@ body {
   padding-bottom: 6rem !important;
 }
 
-.showcase-3B h5 {
+.showcase-3B p {
   color: #343a40 !important;
 }
 
@@ -277,22 +282,22 @@ body {
 
 /*Benefits Part*/
 .benefits-container {
-  padding: 6rem 0;
+  padding: 5rem 3rem;
+  background-color: #f8f9fa;
 }
 
 .benefits {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.75rem;
   justify-content: center;
 }
 
 .fas {
   font-size: 2rem;
-  border: 1px solid #c2c2c2;
   padding: 1rem;
   border-radius: 50%;
-  color: rgb(100, 100, 100);
+  color: #343a40 !important;
 }
 
 .benefits-text {
@@ -309,20 +314,27 @@ body {
 /*Footer Part*/
 .footer-container {
   color: #868e96;
-  padding: 3.5rem 0;
+  padding: 6rem 0;
   background-color: #dee2e6;
+  width: 100%;
 }
 
 .footer-brand {
   display: flex;
-  color: #000;
-  letter-spacing: 0.2rem;
+  align-items: baseline;
+  padding-bottom: 1rem;
+}
+
+.footer-brand h4 {
+  letter-spacing: 2px;
 }
 
 .footer-1st-section p {
   font-family: 'PT sans', sans-serif;
-  letter-spacing: 0.075rem;
-  margin-bottom: 0.5rem !important;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  color: #868e96;
+  margin-bottom: 1rem !important;
 }
 
 .social-icons-container {
@@ -349,8 +361,8 @@ body {
   color: #000;
   font-family: 'PT sans', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  font-size: 1rem;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
 }
 
 .footer-2nd-section ul {
@@ -364,7 +376,8 @@ body {
   text-decoration: none;
   color: #868e96;
   text-transform: capitalize;
-  letter-spacing: 0.05rem;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
 }
 
 .footer-2nd-section a:hover {
@@ -375,23 +388,25 @@ body {
   color: #000;
   font-family: 'PT sans', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  font-size: 1rem;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
 }
 
 .footer-3rd-section p {
   font-family: 'PT sans', sans-serif;
   color: #868e96;
-  letter-spacing: 0.05rem;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
 }
 
 .suscribe-container {
   display: flex;
   align-items: center;
+  border: 1px solid #868e96;
 }
 
 .suscribe-container input {
-  padding: 0.45rem 1rem;
+  padding: 0.35rem 1rem;
   width: 100%;
   border: none;
   outline: none;
@@ -399,7 +414,7 @@ body {
 
 .suscribe-container input::placeholder {
   font-family: 'PT sans', sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #868e96;
   letter-spacing: 0.05rem;
 }
@@ -408,14 +423,35 @@ body {
   background: #fff;
   color: #3e454b;
   font-size: 1rem;
+  display: flex;
   right: 11rem;
-  padding: 0.4rem;
-  border: 1px solid #868e96;
+  padding: 0.79rem;
+  border: none;
 }
 
 .suscribe-container button:hover {
   color: #000;
-  border: 1px solid #000;
+}
+
+.copyright-section {
+  background-color: #343a40;
+  color: #fff;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.copyright-section-text {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+.copyright-section-icons {
+  display: flex;
+  gap: 0.25rem;
+  font-size: 1.15rem;
 }
 
 /*Product Screen Part*/
@@ -425,6 +461,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 6rem;
 }
 
 .all-products-headers {
@@ -493,6 +530,8 @@ body {
   gap: 0.5rem !important;
   justify-content: center !important;
   text-transform: uppercase !important;
+  padding: 0.5rem 1.8rem !important;
+  letter-spacing: 2px;
 }
 
 /*Individual Product ShowCase*/
@@ -509,4 +548,82 @@ body {
   display: flex;
   gap: 0.25rem;
   align-items: baseline;
+  font-size: 0.7875rem;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+
+.individual-product-container {
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.individual-product-details {
+  padding: 0 2.5rem;
+}
+
+.individual-product-details h1 {
+  padding-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.individual-product-price {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.individual-product-desc {
+  color: #868e96 !important;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+
+.individual-product-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.individual-product-info h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-family: 'Archivo Black', sans-serif !important;
+  letter-spacing: 1px;
+}
+
+.individual-product-info p {
+  color: #868e96;
+  font-size: 0.9rem;
+}
+
+.quantity-form {
+  padding: 0.5rem 1.5rem;
+  max-width: 100px;
+  background-color: #fff;
+  border: 1px solid #868e96;
+  color: #000;
+}
+
+.btn-addCart {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: 3px;
+  margin-top: 1rem;
+}
+
+/*Rating Part*/
+.rating {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.rating-text {
+  font-size: 0.7875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #868e96;
+  margin-left: 0.25rem;
 }

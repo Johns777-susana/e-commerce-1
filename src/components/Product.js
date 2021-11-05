@@ -9,11 +9,19 @@ const Product = ({ product }) => {
     <Card className='my-3 p-3 rounded products-container'>
       <Card.Img src={product.image} variant='top' alt={product.name} />
       <Card.Body className='products-text'>
-        <Card.Title as='div' style={{ textTransform: 'capitalize' }}>
-          <strong>{product.name}</strong>
+        <Card.Title as='div'>
+          <h6
+            style={{
+              textTransform: 'capitalize',
+              fontSize: '1rem',
+              letterSpacing: '2px',
+            }}
+          >
+            {product.name}
+          </h6>
         </Card.Title>
-        <Card.Text as='div' style={{ color: '#f57224', fontSize: '1.5rem' }}>
-          ${product.price}
+        <Card.Text as='div' style={{ color: '#868e96', fontSize: '0.9rem' }}>
+          ${product.price}.00
         </Card.Text>
       </Card.Body>
       <Card.Body className='card-overlay card-overlayFade'>

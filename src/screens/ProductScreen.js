@@ -2,17 +2,10 @@ import React from 'react';
 import NavbarSecondary from '../components/navbar/NavbarSecondary';
 import allProducts from '../data/allProducts';
 import { Link } from 'react-router-dom';
-import {
-  Container,
-  Row,
-  Col,
-  ListGroup,
-  Card,
-  Button,
-  Image,
-  Form,
-} from 'react-bootstrap';
+import { Row, Col, Button, Image, Form } from 'react-bootstrap';
 import { FiShoppingCart } from 'react-icons/fi';
+import Rating from '../components/Rating';
+import Footer from '../components/Footer';
 
 const ProductScreen = (props) => {
   const product = allProducts.find(
@@ -23,14 +16,81 @@ const ProductScreen = (props) => {
     <div className='individual-product-container'>
       <NavbarSecondary />
 
-      <Row>
+      <Row
+        className='py-4'
+        style={{
+          marginLeft: '0',
+          marginRight: '0',
+          padding: '0 0.5rem',
+          marginBottom: '4rem',
+        }}
+      >
         <Col md={6}>
           <Image src={product.image} alt={product.name} fluid />
         </Col>
-        <Col md={6}>
-          <
+        <Col md={6} className='individual-product-details'>
+          <Col className='flex-row'>
+            <Link to='/' className='home-link'>
+              Home
+            </Link>{' '}
+            /{' '}
+            <Link to='/products' className='home-link'>
+              Products
+            </Link>{' '}
+            / <p style={{ color: '#00000071' }}>{product.name}</p>
+          </Col>
+          <Col>
+            <h1>{product.name}</h1>
+          </Col>
+          <Row className='individual-product-price'>
+            <Col>${product.price}.00</Col>
+            <Col>
+              <Rating
+                value={product.rating}
+                text={`${product.numReviews} reviews`}
+              />
+            </Col>
+          </Row>
+          <Col className='individual-product-desc'>
+            <p>{product.desc}</p>
+          </Col>
+          <Row className='individual-product-info'>
+            <Col>
+              <h4>Stock :</h4>{' '}
+              <p>
+                {product.countInStock > 0
+                  ? 'Product In Stock'
+                  : 'Not Available in Stock'}
+              </p>{' '}
+            </Col>
+            <Col>
+              {product.countInStock > 0 && (
+                <Col>
+                  <h4>Quantity :</h4>
+                  <Form.Control as='select' className='quantity-form'>
+                    {[...Array(product.countInStock).keys()].map((x) => (
+                      <option key={x + 1} value={x + 1}>
+                        {x + 1}
+                      </option>
+                    ))}
+                  </Form.Control>
+                </Col>
+              )}
+            </Col>
+          </Row>
+          <Col>
+            <Button
+              variant='dark'
+              disabled={product.countInStock === 0}
+              type='button'
+              className='btn-addCart'
+            >
+              <FiShoppingCart /> Add To Cart
+            </Button>
+          </Col>
         </Col>
       </Row>
+      <Footer />
     </div>
   );
 };
