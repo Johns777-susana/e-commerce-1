@@ -12,7 +12,7 @@ const NavbarSecondary = () => {
       </div>
       <div className='nav-links-secondary'>
         <a href='/'>Home</a>
-        <a href='/products'>Products</a>
+        <Link to='/products'>Products</Link>
         <a href='#'>Contact</a>
         <a href='#'>About Us</a>
       </div>
@@ -20,9 +20,9 @@ const NavbarSecondary = () => {
         <a href='#'>
           <i className='fi fi-rr-search'></i>
         </a>
-        <a href='#'>
+        <Link to='/login' className='home-link'>
           <i className='fi fi-rr-user'></i>
-        </a>
+        </Link>
         <a href='#'>
           <i className='fi fi-rr-shopping-cart'></i>
         </a>

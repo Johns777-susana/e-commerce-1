@@ -3,15 +3,15 @@ import HomeScreen from './screens/HomeScreen';
 import ProductsScreen from './screens/ProductsScreen';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ProductScreen from './screens/ProductScreen';
+import LoginScreen from './screens/LoginScreen';
 
 function App() {
   return (
     <Router>
       <Route path='/' component={HomeScreen} exact />
-      <Switch>
-        <Route path='/products' component={ProductsScreen} />
-        <Route path='/:id' component={ProductScreen} />
-      </Switch>
+      <Route path='/products' component={ProductsScreen} />
+      <Route path='/product/:id' component={ProductScreen} />
+      <Route path='/login' component={LoginScreen} />
     </Router>
   );
 }

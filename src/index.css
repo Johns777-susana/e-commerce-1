@@ -188,6 +188,7 @@ body {
   letter-spacing: 0.25rem;
   font-family: 'Montserrat', sans-serif;
   color: #fff !important;
+  border: 1.25px solid #dee2e6;
 }
 
 .carousel-indicators button {
@@ -283,6 +284,7 @@ body {
 /*Benefits Part*/
 .benefits-container {
   padding: 5rem 3rem;
+  width: 100%;
   background-color: #f8f9fa;
 }
 
@@ -626,4 +628,77 @@ body {
   letter-spacing: 0.1rem;
   color: #868e96;
   margin-left: 0.25rem;
+}
+
+/*Login And Register Screen Part*/
+.login-headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.login-headings h1 {
+  font-family: 'Archivo Black', sans-serif;
+  text-transform: capitalize;
+  font-size: 4rem;
+  color: #343a40;
+  letter-spacing: 1px;
+}
+
+.login-screen-details {
+  display: flex;
+  justify-content: center;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: #343a40;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 4rem;
+}
+
+.login-screen-details h5 {
+  background-color: #f8f9fa;
+  padding: 1.25rem 1.5rem;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.login-screen-details p {
+  font-size: 1.215rem;
+  font-weight: 300;
+}
+
+.login-texts {
+  color: #868e96 !important;
+  font-size: 0.9rem !important;
+}
+
+.login-underline {
+  height: 2px;
+  background-color: #f8f9fa;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  font-size: 1rem !important;
+  color: #868e96;
+}
+
+.form-control {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #3e454b;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
 }

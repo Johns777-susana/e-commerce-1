@@ -12,7 +12,9 @@ const Navbar = () => {
       </div>
       <div className='nav-links'>
         <a href='/'>Home</a>
-        <a href='/products'>Products</a>
+        <Link to='/products' className='home-link'>
+          Products
+        </Link>
         <a href='#'>Contact</a>
         <a href='#'>About Us</a>
       </div>
@@ -20,9 +22,9 @@ const Navbar = () => {
         <a href='#'>
           <i class='fi fi-rr-search'></i>
         </a>
-        <a href='#'>
+        <Link to='/login' className='home-link'>
           <i class='fi fi-rr-user'></i>
-        </a>
+        </Link>
         <a href='#'>
           <i class='fi fi-rr-shopping-cart'></i>
         </a>

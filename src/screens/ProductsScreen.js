@@ -6,6 +6,7 @@ import { BsArrowLeft } from 'react-icons/bs';
 import NavbarSecondary from '../components/navbar/NavbarSecondary';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import Benefits from '../components/Benefits';
 
 const ProductScreen = () => {
   return (
@@ -13,7 +14,7 @@ const ProductScreen = () => {
       <div className='products-screen-container'>
         <NavbarSecondary />
         <div className='all-products-headers'>
-          <Link href='/' className='home-link'>
+          <Link to='/' className='home-link'>
             <BsArrowLeft /> Home
           </Link>
           <h1>All Products</h1>
@@ -26,6 +27,7 @@ const ProductScreen = () => {
           ))}
         </Row>
       </div>
+      <Benefits />
       <Footer />
     </>
   );

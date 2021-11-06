@@ -6,6 +6,7 @@ import { Row, Col, Button, Image, Form } from 'react-bootstrap';
 import { FiShoppingCart } from 'react-icons/fi';
 import Rating from '../components/Rating';
 import Footer from '../components/Footer';
+import Benefits from '../components/Benefits';
 
 const ProductScreen = (props) => {
   const product = allProducts.find(
@@ -15,7 +16,6 @@ const ProductScreen = (props) => {
   return (
     <div className='individual-product-container'>
       <NavbarSecondary />
-
       <Row
         className='py-4'
         style={{
@@ -90,6 +90,7 @@ const ProductScreen = (props) => {
           </Col>
         </Col>
       </Row>
+      <Benefits />
       <Footer />
     </div>
   );

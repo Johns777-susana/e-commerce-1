@@ -28,7 +28,7 @@ const Product = ({ product }) => {
         <Button variant='outline-light' className='overlay-btns'>
           <FiShoppingCart /> Add
         </Button>
-        <Link to={`/${product._id}`} className='home-link'>
+        <Link to={`/product/${product._id}`} className='home-link'>
           <Button variant='outline-light' className='overlay-btns'>
             <BsArrowsFullscreen /> View
           </Button>
