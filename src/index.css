@@ -752,6 +752,9 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  color: #3e454b;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .cart-screen-container h1 {
@@ -759,4 +762,105 @@ body {
   margin-bottom: 3rem;
   font-family: 'Archivo Black', sans-serif;
   color: #3e454b;
+  font-size: 4.05rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.cart-headers {
+  background-color: #f8f9fa;
+  padding: 1.25rem 0;
+  padding-left: 2rem !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+  font-family: 'Archivo Black', sans-serif;
+  color: #3e454b;
+  margin-bottom: 1.5rem;
+}
+
+.cart-product-image {
+  height: 100px;
+  width: 100px;
+}
+
+.cross-btn-cart {
+  background: transparent;
+  border: none;
+  color: #3e454b;
+  font-size: 0.9rem;
+}
+
+.cart-items-details {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.quantity-form {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.order-container {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  background-color: #f8f9fa;
+  font-size: 0.9rem;
+  padding: 1rem 1.5rem;
+  margin-left: 2rem;
+}
+
+.order-header {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #343a40;
+}
+
+.order-container p {
+  letter-spacing: 1px;
+  color: #343a40;
+  margin-bottom: 0.75rem;
+}
+
+.cart-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem auto;
+  max-width: 800px;
+}
+
+.cart-btns button {
+  font-size: 0.6875rem;
+  padding: 0.5rem 0.75rem;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.continue-shopping-btn {
+  background: transparent;
+  border: none;
+  color: #3e454b;
+  cursor: pointer;
+}
+
+.continue-shopping-btn:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.checkout-btn {
+  border: none;
+  background-color: #3e454b;
+  color: #fff;
+}
+
+.checkout-btn:hover {
+  background-color: #000;
+  transition: 0.4s;
 }
