@@ -1,0 +1,90 @@
+/*Navbar Part*/
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+
+@media only screen and (max-width: 980px) {
+  .navbar {
+    padding: 0.5rem 1.5rem !important;
+  }
+  .navbar-secondary {
+    padding: 0.5rem 1.5rem !important;
+  }
+  .navbar-white-bg {
+    background-color: #fff;
+  }
+  .nav-brand h4 {
+    font-size: 1.25rem;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-icons {
+    display: none;
+  }
+  .nav-links-secondary {
+    display: none;
+  }
+  .nav-icons-secondary {
+    display: none;
+  }
+  .nav-bar-responsive {
+    display: flex;
+    background: transparent;
+    border: none;
+  }
+  .nav-bar-responsive-secondary {
+    display: flex;
+    background: transparent;
+    border: none;
+    color: #343a40;
+  }
+  .nav-mobile-links-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 0;
+    position: absolute;
+    z-index: 9;
+    top: 3.25rem;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    transition: 0.3s all ease-in-out;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  }
+  .nav-mobile-links {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    padding-left: 1.25rem !important;
+    padding-top: 0.5rem !important;
+    flex-direction: column;
+  }
+  .nav-mobile-links a {
+    color: #343a40;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: 'Zen Maru Gothic', sans-serif !important;
+  }
+  .nav-mobile-links a:hover {
+    color: #000;
+  }
+  .nav-mobile-icons {
+    color: #343a40;
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem !important;
+    justify-content: space-between;
+  }
+  .nav-mobile-icons a {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+/*Slider Part*/
+@media only screen and (max-width: 980px) {
+}

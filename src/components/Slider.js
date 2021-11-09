@@ -6,11 +6,7 @@ const Slider = () => {
   return (
     <Carousel>
       <Carousel.Item interval={5000}>
-        <img
-          className='d-block slider-img'
-          src='https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80'
-          alt='First slide'
-        />
+        <div className='d-block slider-img-1'></div>
         <Carousel.Caption className='carousel-text'>
           <p>our best seller</p>
           <h3>
@@ -25,11 +21,7 @@ const Slider = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={5000}>
-        <img
-          className='d-block slider-img'
-          src='https://images.unsplash.com/photo-1518908336710-4e1cf821d3d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1013&q=80'
-          alt='Second slide'
-        />
+        <div className='d-block slider-img-2'></div>
         <Carousel.Caption className='carousel-text'>
           <p>our best seller</p>
           <h3>
@@ -44,11 +36,7 @@ const Slider = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={5000}>
-        <img
-          className='d-block slider-img'
-          src='https://images.unsplash.com/photo-1510297182321-a75bdc5b1299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=902&q=80'
-          alt='Third slide'
-        />
+        <div className='d-block slider-img-3'></div>
         <Carousel.Caption className='carousel-text'>
           <p>our best seller</p>
           <h3>

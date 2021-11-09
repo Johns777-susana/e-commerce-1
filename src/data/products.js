@@ -1,4 +1,4 @@
-const allProducts = [
+const products = [
   {
     _id: 1,
     name: 'Apple AirPods (2nd Generation)',
@@ -133,4 +133,4 @@ const allProducts = [
   },
 ];
 
-export default allProducts;
+export default products;

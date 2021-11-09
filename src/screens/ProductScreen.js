@@ -1,17 +1,15 @@
 import React from 'react';
 import NavbarSecondary from '../components/navbar/NavbarSecondary';
-import allProducts from '../data/allProducts';
 import { Link } from 'react-router-dom';
 import { Row, Col, Button, Image, Form } from 'react-bootstrap';
 import { FiShoppingCart } from 'react-icons/fi';
 import Rating from '../components/Rating';
 import Footer from '../components/Footer';
 import Benefits from '../components/Benefits';
+import products from '../data/products';
 
 const ProductScreen = (props) => {
-  const product = allProducts.find(
-    (x) => x._id === Number(props.match.params.id)
-  );
+  const product = products.find((x) => x._id === Number(props.match.params.id));
 
   return (
     <div className='individual-product-container'>

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import Product from '../components/Product';
-import allProducts from '../data/allProducts';
 import { BsArrowLeft } from 'react-icons/bs';
 import NavbarSecondary from '../components/navbar/NavbarSecondary';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import Benefits from '../components/Benefits';
+import products from '../data/products';
 
 const ProductScreen = () => {
   return (
@@ -20,7 +20,7 @@ const ProductScreen = () => {
           <h1>All Products</h1>
         </div>
         <Row className='all-products mx-0 px-3'>
-          {allProducts.map((product) => (
+          {products.map((product) => (
             <Col sm={12} md={6} lg={4} xl={3}>
               <Product key={product._id} product={product} />
             </Col>

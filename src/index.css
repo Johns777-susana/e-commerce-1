@@ -19,7 +19,6 @@ body {
   font-family: 'Zen Maru Gothic', sans-serif;
   display: flex;
   justify-content: space-between;
-  padding: 0 2rem;
   padding: 1rem 2.25rem !important;
   align-items: center;
   transition: 0.6s ease-in-out;
@@ -28,6 +27,10 @@ body {
 }
 
 .navbar:hover {
+  background-color: #fff;
+}
+
+.navbar:focus {
   background-color: #fff;
 }
 
@@ -40,6 +43,10 @@ body {
 }
 
 .navbar:hover > .nav-icons a {
+  color: #000;
+}
+
+.navbar:hover > .nav-bar-responsive {
   color: #000;
 }
 
@@ -93,8 +100,22 @@ body {
   font-size: 1.25rem !important;
 }
 
-/*Navbar Secondary*/
+.nav-bar-responsive {
+  display: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
 
+.nav-mobile-links-container {
+  display: none;
+}
+
+.nav-bar-responsive-secondary {
+  display: none;
+  font-size: 1.5rem;
+}
+
+/*Navbar Secondary*/
 .navbar-secondary {
   font-family: 'Zen Maru Gothic', sans-serif;
   display: flex;
@@ -155,9 +176,31 @@ body {
   top: 0;
 }
 
-.slider-img {
+.slider-img-1 {
+  background: url('https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
+}
+
+.slider-img-2 {
+  background: url('https://images.unsplash.com/photo-1518908336710-4e1cf821d3d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1013&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 110vh;
+}
+
+.slider-img-3 {
+  background: url('https://images.unsplash.com/photo-1510297182321-a75bdc5b1299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=902&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 110vh;
 }
 
 .carousel-text {
@@ -701,4 +744,19 @@ body {
   border: 1px solid #3e454b;
   letter-spacing: 2px;
   font-size: 0.9rem;
+}
+
+/*Cart Screen*/
+.cart-screen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.cart-screen-container h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: 'Archivo Black', sans-serif;
+  color: #3e454b;
 }
