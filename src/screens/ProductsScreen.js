@@ -21,7 +21,7 @@ const ProductScreen = () => {
         </div>
         <Row className='all-products mx-0 px-3'>
           {products.map((product) => (
-            <Col sm={12} md={6} lg={4} xl={3}>
+            <Col sm={6} md={4} lg={4} xl={3}>
               <Product key={product._id} product={product} />
             </Col>
           ))}

@@ -4,14 +4,15 @@ import socioIcons from '../data/socioIcons';
 import { FaPaperPlane } from 'react-icons/fa';
 import { RiMastercardLine } from 'react-icons/ri';
 import { SiPaypal, SiChase, SiVisa } from 'react-icons/si';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <>
       <footer className='footer-container'>
-        <Container>
-          <Row>
-            <Col className='mx-5 footer-1st-section' xs={4}>
+        <Container className='mr-zero'>
+          <Row className='footer-container-flex-col'>
+            <Col className='mx-5 footer-1st-section'>
               <div className='footer-brand'>
                 <h4>e-Lectro</h4>
                 <span style={{ fontSize: '1.5rem', color: 'skyblue' }}>.</span>
@@ -31,20 +32,23 @@ const Footer = () => {
               <h6>Company</h6>
               <ul>
                 <li>
-                  <a href='#'>log in</a>
+                  <Link to='/login' className='home-link'>
+                    log in
+                  </Link>
                 </li>
                 <li>
-                  <a href='#'>register</a>
+                  <Link to='/login' className='home-link'>
+                    register
+                  </Link>
                 </li>
                 <li>
-                  <a href='#'>login</a>
-                </li>
-                <li>
-                  <a href='#'>company policy</a>
+                  <Link to='/' className='home-link'>
+                    company policy
+                  </Link>
                 </li>
               </ul>
             </Col>
-            <Col className='mx-5 footer-3rd-section' xs={4}>
+            <Col className='mx-5 footer-3rd-section'>
               <h6>daily offers & discounts</h6>
               <p>
                 Suscribe to our newsletter to not miss our daily offers and

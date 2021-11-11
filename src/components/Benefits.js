@@ -5,7 +5,7 @@ const Benefits = () => {
   return (
     <div className='benefits-container'>
       <Container fluid>
-        <Row style={{ display: 'flex', gap: '1rem', paddingLeft: '0' }}>
+        <Row className='benefits-container-flex-col'>
           <Col className='benefits'>
             <i class='fas fa-truck-moving'></i>
             <div className='benefits-text'>

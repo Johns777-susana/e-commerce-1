@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import NavbarSecondary from '../components/navbar/NavbarSecondary';
 import { Link } from 'react-router-dom';
 import { Row, Col, Button, Image, Form } from 'react-bootstrap';
@@ -7,9 +7,27 @@ import Rating from '../components/Rating';
 import Footer from '../components/Footer';
 import Benefits from '../components/Benefits';
 import products from '../data/products';
+import CartContext from '../context/cart-context';
 
 const ProductScreen = (props) => {
   const product = products.find((x) => x._id === Number(props.match.params.id));
+
+  /*Context*/
+  const { addProduct } = useContext(CartContext);
+
+  const addProductHandler = () => {
+    const newCartItems = {
+      id: Math.random(),
+      image: product.image,
+      price: product.price,
+      name: product.name,
+      category: product.category,
+      qty: product.qty,
+      shippingCost: product.shippingCost,
+      tax: product.tax,
+    };
+    addProduct(newCartItems);
+  };
 
   return (
     <div className='individual-product-container'>
@@ -82,6 +100,7 @@ const ProductScreen = (props) => {
               disabled={product.countInStock === 0}
               type='button'
               className='btn-addCart'
+              onClick={addProductHandler}
             >
               <FiShoppingCart /> Add To Cart
             </Button>

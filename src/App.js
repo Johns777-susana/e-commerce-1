@@ -1,7 +1,7 @@
 import React from 'react';
 import HomeScreen from './screens/HomeScreen';
 import ProductsScreen from './screens/ProductsScreen';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ProductScreen from './screens/ProductScreen';
 import LoginScreen from './screens/LoginScreen';
 import CartScreen from './screens/CartScreen';

@@ -83,8 +83,160 @@
     align-items: center;
     gap: 0.5rem;
   }
+  .resp-cart-icons {
+    position: relative;
+  }
+  .item-count-resp {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    position: absolute;
+    font-size: 0.75rem;
+    top: -8px;
+    right: 85px;
+    color: #fff;
+    background-color: #3e454b;
+    border-radius: 50%;
+    padding: 2px 8px;
+  }
 }
 
-/*Slider Part*/
+/*Product Showcase Part*/
 @media only screen and (max-width: 980px) {
+  .showcase-col h1 {
+    font-size: 2.5rem !important;
+  }
+  .showcase-row {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  .showcase-flex-col {
+    flex-direction: column;
+  }
+}
+
+/*Benefits Part*/
+@media only screen and (max-width: 980px) {
+  .benefits-container-flex-col {
+    flex-direction: column;
+  }
+}
+
+/*footer part*/
+@media only screen and (max-width: 980px) {
+  .footer-container-flex-col {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 1.5rem;
+  }
+  .mr-zero {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .copyright-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+/*Single Product Screen part*/
+@media only screen and (max-width: 525px) {
+  .individual-product-price {
+    flex-direction: column;
+  }
+}
+
+/*Login and register screen*/
+@media only screen and (max-width: 525px) {
+  .login-headings h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .login-btn {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .login-part {
+    margin-bottom: 2rem;
+  }
+}
+
+/*Cart Screen Part*/
+@media only screen and (max-width: 1250px) {
+  .cart-items-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .cart-first-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .cart-screen-container {
+    display: none;
+  }
+  .responsive-cart-screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    color: #3e454b;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    font-family: 'Zen Maru Gothic', sans-serif !important;
+    font-size: 0.9rem;
+  }
+  .responsive-cart-screen-container h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: 'Archivo Black', sans-serif;
+    color: #3e454b;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+  .resp-cart-first-container {
+    margin: 1rem 1.25rem;
+  }
+  .resp-cart-headers {
+    background-color: #f8f9fa;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .resp-cart-items-details {
+    margin: 2rem auto;
+    border-bottom: 1px solid #dad9d9;
+    padding-bottom: 1rem;
+  }
+  .resp-cart-1st-row {
+    display: flex;
+    gap: 1rem;
+  }
+  .resp-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .resp-qty {
+    display: flex;
+    justify-content: space-between;
+  }
+  .order-container {
+    margin: 2rem 1.25rem;
+  }
+  .qty {
+    border: none !important;
+    padding: 0 !important;
+  }
 }

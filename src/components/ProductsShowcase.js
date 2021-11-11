@@ -6,7 +6,7 @@ const ProductsShowcase = () => {
   return (
     <div className='showcase-container'>
       <Container fluid>
-        <Row className='showcase-row pt-2 px-2'>
+        <Row className='showcase-flex-col pt-2 px-2' style={{ gap: '0.5rem' }}>
           <Col className='showcase-1A showcase-col'>
             <h1>top picks</h1>
             <Link to='/products'>

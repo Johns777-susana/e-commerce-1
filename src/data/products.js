@@ -9,6 +9,9 @@ const products = [
     rating: 2.5,
     numReviews: 15,
     countInStock: 19,
+    qty: 1,
+    shippingCost: 10,
+    tax: 10,
   },
   {
     _id: 2,
@@ -20,6 +23,9 @@ const products = [
     rating: 8,
     numReviews: 15,
     countInStock: 15,
+    qty: 1,
+    shippingCost: 10,
+    tax: 10,
   },
   {
     _id: 3,
@@ -31,6 +37,9 @@ const products = [
     rating: 8,
     numReviews: 15,
     countInStock: 15,
+    qty: 1,
+    shippingCost: 10,
+    tax: 10,
   },
   {
     _id: 4,
@@ -42,6 +51,9 @@ const products = [
     rating: 8,
     numReviews: 15,
     countInStock: 15,
+    qty: 1,
+    shippingCost: 10,
+    tax: 10,
   },
   {
     _id: 5,
@@ -53,6 +65,9 @@ const products = [
     rating: 8,
     numReviews: 15,
     countInStock: 15,
+    qty: 1,
+    shippingCost: 10,
+    tax: 10,
   },
   {
     _id: 6,
@@ -64,6 +79,9 @@ const products = [
     rating: 8,
     numReviews: 15,
     countInStock: 15,
+    qty: 1,
+    shippingCost: 10,
+    tax: 10,
   },
   {
     _id: 7,
@@ -75,6 +93,9 @@ const products = [
     rating: 8,
     numReviews: 15,
     countInStock: 15,
+    qty: 1,
+    shippingCost: 10,
+    tax: 10,
   },
   {
     _id: 8,
@@ -86,6 +107,9 @@ const products = [
     rating: 8,
     numReviews: 15,
     countInStock: 15,
+    qty: 1,
+    shippingCost: 10,
+    tax: 10,
   },
   {
     _id: 9,
@@ -97,6 +121,9 @@ const products = [
     rating: 8,
     numReviews: 15,
     countInStock: 15,
+    qty: 1,
+    shippingCost: 10,
+    tax: 10,
   },
   {
     _id: 10,
@@ -108,6 +135,9 @@ const products = [
     rating: 8,
     numReviews: 15,
     countInStock: 15,
+    qty: 1,
+    shippingCost: 10,
+    tax: 10,
   },
   {
     _id: 11,
@@ -119,6 +149,9 @@ const products = [
     rating: 8,
     numReviews: 15,
     countInStock: 15,
+    qty: 1,
+    shippingCost: 10,
+    tax: 10,
   },
   {
     _id: 12,
@@ -130,6 +163,9 @@ const products = [
     rating: 8,
     numReviews: 15,
     countInStock: 15,
+    qty: 1,
+    shippingCost: 10,
+    tax: 10,
   },
 ];
 

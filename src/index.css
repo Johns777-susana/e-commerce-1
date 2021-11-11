@@ -115,6 +115,22 @@ body {
   font-size: 1.5rem;
 }
 
+.cart-icons {
+  position: relative;
+}
+
+.item-count {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  position: absolute;
+  font-size: 0.75rem;
+  top: -12px;
+  right: -20px;
+  color: #fff;
+  background-color: #3e454b;
+  border-radius: 50%;
+  padding: 2px 8px;
+}
+
 /*Navbar Secondary*/
 .navbar-secondary {
   font-family: 'Zen Maru Gothic', sans-serif;
@@ -241,7 +257,12 @@ body {
 }
 
 /*Product Show-Case Part*/
-.showcase-row {
+.showcase-container {
+  margin-top: 4rem;
+}
+
+.showcase-row,
+.showcase-flex-col {
   gap: 0.5rem;
 }
 
@@ -287,6 +308,7 @@ body {
   background-image: url('./assets/headphone.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
 
 .showcase-1B {
@@ -316,10 +338,6 @@ body {
   padding-bottom: 6rem !important;
 }
 
-.showcase-3B p {
-  color: #343a40 !important;
-}
-
 .showcase-3B-only-black-btn {
   color: #343a40 !important;
 }
@@ -329,6 +347,11 @@ body {
   padding: 5rem 3rem;
   width: 100%;
   background-color: #f8f9fa;
+}
+
+.benefits-container-flex-col {
+  display: flex;
+  gap: 1.5rem;
 }
 
 .benefits {
@@ -490,7 +513,8 @@ body {
 
 .copyright-section-text {
   font-size: 0.9rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: 'Zen Maru Gothic', sans-serif;
 }
 
 .copyright-section-icons {
@@ -787,8 +811,12 @@ body {
 .cross-btn-cart {
   background: transparent;
   border: none;
-  color: #3e454b;
+  color: #868e96;
   font-size: 0.9rem;
+}
+
+.cart-items-container {
+  gap: 1rem;
 }
 
 .cart-items-details {
@@ -808,7 +836,6 @@ body {
   background-color: #f8f9fa;
   font-size: 0.9rem;
   padding: 1rem 1.5rem;
-  margin-left: 2rem;
 }
 
 .order-header {
@@ -863,4 +890,49 @@ body {
 .checkout-btn:hover {
   background-color: #000;
   transition: 0.4s;
+}
+
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.qty-control p {
+  margin-bottom: 0;
+  border: 1px solid #dee2e6;
+  padding: 0.5rem 1.25rem;
+}
+
+.qty-btns {
+  background: transparent;
+  border: none;
+  color: #868e96;
+}
+
+.no-items-cart {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+  margin-bottom: 8rem;
+}
+
+.no-items-cart h2 {
+  font-family: 'Archivo Black', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.no-items-cart-btn {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+}
+
+.responsive-cart-screen-container {
+  display: none;
 }

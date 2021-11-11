@@ -1,12 +1,16 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { VscThreeBars } from 'react-icons/vsc';
 import { FaTimes } from 'react-icons/fa';
+import CartContext from '../../context/cart-context';
 
 const NavbarSecondary = () => {
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef();
   const linksRef = useRef();
+
+  /*Context*/
+  const { qty } = useContext(CartContext);
 
   const toggleLinks = () => {
     setShowLinks(!showLinks);
@@ -42,9 +46,12 @@ const NavbarSecondary = () => {
         <Link to='/login' className='home-link'>
           <i className='fi fi-rr-user'></i>
         </Link>
-        <Link to='/cart' className='home-link'>
-          <i className='fi fi-rr-shopping-cart'></i>
-        </Link>
+        <div className='cart-icons'>
+          <Link to='/cart' className='home-link'>
+            <i className='fi fi-rr-shopping-cart'></i>
+          </Link>
+          {qty === 0 ? null : <p className='item-count'>{qty}</p>}
+        </div>
       </div>
 
       {/* Part for responsive screen*/}
@@ -80,12 +87,15 @@ const NavbarSecondary = () => {
                 </span>{' '}
                 <span style={{ fontSize: '0.75rem' }}>Log In</span>
               </Link>
-              <Link to='/cart' className='home-link'>
-                <span style={{ fontSize: '1.5rem' }}>
-                  <i className='fi fi-rr-shopping-cart'></i>
-                </span>{' '}
-                <span style={{ fontSize: '0.75rem' }}>View Cart</span>{' '}
-              </Link>
+              <div className='resp-cart-icons'>
+                <Link to='/cart' className='home-link'>
+                  <span style={{ fontSize: '1.5rem' }}>
+                    <i className='fi fi-rr-shopping-cart'></i>
+                  </span>{' '}
+                  <span style={{ fontSize: '0.75rem' }}>View Cart</span>{' '}
+                </Link>
+                {qty === 0 ? null : <p className='item-count-resp'>{qty}</p>}
+              </div>
             </div>
           </div>
         </div>
