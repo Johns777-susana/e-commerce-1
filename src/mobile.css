@@ -99,6 +99,19 @@
   }
 }
 
+/*Slider Part*/
+@media only screen and (max-width: 400px) {
+  .carousel-text {
+    bottom: 18rem !important;
+  }
+  .carousel-text p {
+    font-weight: bold;
+  }
+  .showcase-container {
+    margin-top: 5rem;
+  }
+}
+
 /*Product Showcase Part*/
 @media only screen and (max-width: 980px) {
   .showcase-col h1 {

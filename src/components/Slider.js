@@ -10,8 +10,8 @@ const Slider = () => {
         <Carousel.Caption className='carousel-text'>
           <p>our best seller</p>
           <h3>
-            classy
-            <br /> headphones
+            classic
+            <br /> Sound
           </h3>
           <Link to='/products'>
             <Button variant='outline-dark' className='carousel-btn'>
@@ -40,7 +40,7 @@ const Slider = () => {
         <Carousel.Caption className='carousel-text'>
           <p>our best seller</p>
           <h3>
-            brand new
+            branded
             <br />
             smart phones
           </h3>
