@@ -34,10 +34,16 @@ const NavbarSecondary = () => {
         <span style={{ fontSize: '1.5rem', color: 'skyblue' }}>.</span>
       </div>
       <div className='nav-links-secondary'>
-        <a href='/'>Home</a>
+        <Link to='/' className='home-link'>
+          Home
+        </Link>
         <Link to='/products'>Products</Link>
-        <a href='#'>Contact</a>
-        <a href='#'>About Us</a>
+        <Link to='/' className='home-link'>
+          Contact
+        </Link>
+        <Link to='/' className='home-link'>
+          About Us
+        </Link>
       </div>
       <div className='nav-icons-secondary'>
         <Link to='/' className='home-link'>

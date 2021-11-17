@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Row, Col, Container, Button, Image } from 'react-bootstrap';
+import { Row, Col, Button, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 import { HiMinusSm, HiPlusSm } from 'react-icons/hi';

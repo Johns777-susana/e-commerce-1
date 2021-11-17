@@ -543,32 +543,41 @@ body {
   align-items: center;
   gap: 0.25rem;
   padding: 1.5rem 0;
-  color: #868e96;
   opacity: 0.6;
   text-decoration: none;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.all-products-headers a:hover {
-  color: #000;
-  transition: 0.3s;
-}
-
 .all-products-headers h1 {
   padding: 1.5rem 0;
-  font-family: 'Limelight', cursive !important;
+  font-family: 'Archivo Black', sans-serif !important;
+  font-size: 4.05rem;
+  text-transform: capitalize;
 }
 
-/*Products Part*/
-.products-container {
+.all-products-headers-link {
+  display: flex;
+  align-items: baseline;
+  font-size: 0.9rem;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.all-products-headers-link p {
+  margin-bottom: 0;
+}
+
+.all-products-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1180px;
+  width: 100%;
+}
+
+.overlay-container {
   position: relative;
   cursor: pointer;
-}
-
-.products-container:hover {
-  box-shadow: 0px 2.5px 5px rgba(0, 0, 0, 0.25);
-  transition: 0.3s;
 }
 
 .card-overlay {
@@ -580,27 +589,154 @@ body {
   opacity: 0;
 }
 
+.overlay-container:hover .card-overlayFade {
+  opacity: 1;
+}
+
+.overlay-container:hover .overlay-btn-left {
+  transform: translateX(0px);
+}
+
+.overlay-container:hover .overlay-btn-right {
+  transform: translateX(0px);
+}
+
 .card-overlayFade {
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #0a0a0abe;
+  background-color: rgba(255, 255, 255, 0.8);
   transition: all 0.3s ease-in-out;
 }
 
-.products-container:hover .card-overlayFade {
-  opacity: 1;
+.overlay-btn-left {
+  font-size: 0.9rem;
+  padding: 0.65rem 0.75rem;
+  display: flex;
+  align-items: center;
+  transform: translateX(-10px);
+  transition: 0.2s all ease-in-out;
 }
 
-.overlay-btns {
-  display: flex !important;
-  align-items: center !important;
-  gap: 0.5rem !important;
-  justify-content: center !important;
-  text-transform: uppercase !important;
-  padding: 0.5rem 1.8rem !important;
-  letter-spacing: 2px;
+.overlay-btn-right {
+  font-size: 0.9rem;
+  padding: 0.65rem 0.75rem;
+  display: flex;
+  align-items: center;
+  transition: 0.2s all ease-in-out;
+  transform: translateX(10px);
+}
+
+.overlay-view-btn {
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 0.75rem;
+}
+
+.products-text {
+  padding-bottom: 0;
+}
+
+.products-text h6:hover {
+  text-decoration: underline;
+}
+
+.sort-products {
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  align-items: center;
+}
+
+.sort-products select {
+  border: none;
+  padding: 5px 10px;
+  background-color: #f8f9fa;
+  margin-left: 0.5rem;
+}
+
+/*Category Part*/
+.category-container {
+  max-width: 200px;
+  width: 100%;
+}
+
+.category-header {
+  padding-bottom: 0.75rem;
+  background-color: #dee2e6;
+  padding: 10px 0;
+  padding-left: 15px !important;
+  padding-right: 8rem !important;
+  font-size: 0.7875rem;
+}
+
+.category-list {
+  list-style-type: none;
+  display: flex;
+  gap: 0.25rem;
+  flex-direction: column;
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+.category-btn {
+  display: flex;
+  background: transparent;
+  border: none;
+  text-align: left;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px !important;
+  width: 100%;
+}
+
+.category-btn:hover {
+  background-color: #f8f9fa;
+}
+
+.brand-header {
+  padding-bottom: 0.75rem;
+  background-color: #dee2e6;
+  padding: 10px 0;
+  padding-left: 15px !important;
+  padding-right: 8rem !important;
+  font-size: 0.7875rem;
+}
+
+.brand-list {
+  list-style-type: none;
+  display: flex;
+  gap: 0.25rem;
+  flex-direction: column;
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+.brand-btn {
+  background: transparent;
+  border: none;
+  text-align: left;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px !important;
+  width: 100%;
+}
+
+.brand-btn:hover {
+  background-color: #f8f9fa;
 }
 
 /*Individual Product ShowCase*/

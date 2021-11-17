@@ -6,8 +6,8 @@ import { FiShoppingCart } from 'react-icons/fi';
 import Rating from '../components/Rating';
 import Footer from '../components/Footer';
 import Benefits from '../components/Benefits';
-import products from '../data/products';
 import CartContext from '../context/cart-context';
+import products from '../data/products';
 
 const ProductScreen = (props) => {
   const product = products.find((x) => x._id === Number(props.match.params.id));

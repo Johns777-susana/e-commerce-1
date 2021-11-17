@@ -7,7 +7,7 @@ const Benefits = () => {
       <Container fluid>
         <Row className='benefits-container-flex-col'>
           <Col className='benefits'>
-            <i class='fas fa-truck-moving'></i>
+            <i className='fas fa-truck-moving'></i>
             <div className='benefits-text'>
               <p
                 style={{
@@ -32,7 +32,7 @@ const Benefits = () => {
             </div>
           </Col>
           <Col className='benefits'>
-            <i class='fas fa-headset'></i>
+            <i className='fas fa-headset'></i>
             <div className='benefits-text'>
               <p
                 style={{
@@ -57,7 +57,7 @@ const Benefits = () => {
             </div>
           </Col>
           <Col className='benefits'>
-            <i class='fas fa-coins'></i>
+            <i className='fas fa-coins'></i>
             <div className='benefits-text'>
               <p
                 style={{
