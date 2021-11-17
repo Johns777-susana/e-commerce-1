@@ -9,24 +9,6 @@ const Category = ({ sortByCategory, allProducts, sortByBrands }) => {
   // all products length
   const allProductsLength = products.length;
 
-  // for length of the products acc to the brand of the specific product
-  const countForApple = data.filter((item) => item.brand === 'apple').length;
-  const countForAmazon = data.filter((item) => item.brand === 'amazon').length;
-  const countForBoss = data.filter((item) => item.brand === 'boss').length;
-  const countForNikon = data.filter((item) => item.brand === 'nikon').length;
-  const countForPlaystation = data.filter(
-    (item) => item.brand === 'playstation'
-  ).length;
-  const countForCanon = data.filter((item) => item.brand === 'canon').length;
-  const countForSamsung = data.filter(
-    (item) => item.brand === 'samsung'
-  ).length;
-  const countForLogitech = data.filter(
-    (item) => item.brand === 'logitech'
-  ).length;
-  const countForSony = data.filter((item) => item.brand === 'sony').length;
-  const countForRazor = data.filter((item) => item.brand === 'razor').length;
-
   return (
     <>
       <Container>

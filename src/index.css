@@ -258,12 +258,37 @@ body {
 
 /*Product Show-Case Part*/
 .showcase-container {
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+
+.showcase-headers {
+  text-align: center;
+}
+
+.showcase-headers h1 {
+  font-family: 'Archivo Black', sans-serif;
+  letter-spacing: 2px;
+  font-size: 2.7rem;
+}
+
+.showcase-headers p {
+  color: #868e96;
+  letter-spacing: 1px;
+}
+
+.showcase-grid-container {
   margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  max-width: 1120px;
+  width: 100%;
+  gap: 1.5rem;
 }
 
 .showcase-row,
 .showcase-flex-col {
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 
 .showcase-col {
@@ -273,7 +298,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8.5rem 0;
   gap: 0.5rem;
   color: #fff;
   letter-spacing: 0.15rem;
@@ -284,12 +308,11 @@ body {
   color: #fff;
 }
 
-.showcase-col p {
-  font-size: 2rem !important;
+.showcase-col h2 {
+  font-size: 2.5rem;
   color: #fff;
+  text-transform: uppercase !important;
   font-weight: bold;
-  font-family: 'Zen Maru Gothic', sans-serif !important;
-  text-transform: capitalize;
 }
 
 .showcase-btn {
@@ -298,48 +321,52 @@ body {
   border: none;
 }
 
+.showcase-2A h1 {
+  padding: 0 1rem;
+}
+
 .showcase-1A {
-  background-image: url('./assets/alexa.png');
+  background-image: url('./assets/xbox.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  padding: 10rem 0;
 }
 
 .showcase-2A {
   background-image: url('./assets/headphone.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
+  padding-top: 0.2rem;
 }
 
 .showcase-1B {
-  background-image: url('./assets/earpods.jpg');
+  background-image: url('./assets/alexa.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 6rem !important;
-  padding-bottom: 6rem !important;
+  text-align: center;
+  padding: 2.5rem 0;
 }
 
 .showcase-2B {
-  background-image: url('./assets/mouse.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 6rem !important;
-  padding-bottom: 6rem !important;
-}
-
-.showcase-3B {
   background-image: url('./assets/phone.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  padding-top: 6rem !important;
-  padding-bottom: 6rem !important;
+  background-position: center;
+  text-align: center;
+  padding: 2.5rem 0;
 }
 
-.showcase-3B-only-black-btn {
-  color: #343a40 !important;
+.showcase-3B {
+  background-image: url('./assets/camera.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 2.5rem 0;
 }
 
 /*Benefits Part*/

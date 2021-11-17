@@ -28,6 +28,38 @@ const ProductsScreen = () => {
     setProductsItems(newArray);
   };
 
+  // sorting according to order
+  const sortByOrder = (e) => {
+    if (e.target.value === 'allproducts') {
+      setProductsItems(products);
+    } else {
+      let newArray = products.slice().sort((a, b) => {
+        if (e.target.value === 'cheap') {
+          return a.price > b.price ? 1 : -1;
+        } else {
+          return a.price < b.price ? 1 : -1;
+        }
+      });
+      setProductsItems(newArray);
+    }
+  };
+
+  // sorting according to rating
+  const sortByRating = (e) => {
+    if (e.target.value === 'allproducts') {
+      setProductsItems(products);
+    } else {
+      let newArray = products.slice().sort((a, b) => {
+        if (e.target.value === 'newest') {
+          return a._id < b._id ? 1 : -1;
+        } else {
+          return a.rating < b.rating ? 1 : -1;
+        }
+      });
+      setProductsItems(newArray);
+    }
+  };
+
   return (
     <>
       <div className='products-screen-container'>
@@ -53,18 +85,18 @@ const ProductsScreen = () => {
             <div className='sort-products'>
               <div>
                 <label>Order by :</label>
-                <select>
-                  <option>Default</option>
-                  <option>Cheap First</option>
-                  <option>Expensive First</option>
+                <select onChange={sortByOrder}>
+                  <option value='allproducts'>All Products</option>
+                  <option value='cheap'>Lowest First</option>
+                  <option value='expensive'>Highest First</option>
                 </select>
               </div>
               <div>
                 <label>Sort by :</label>
-                <select>
-                  <option>Default</option>
-                  <option>Newest</option>
-                  <option>Popular</option>
+                <select onChange={sortByRating}>
+                  <option value='allproducts'>All Products</option>
+                  <option value='newest'>Newest</option>
+                  <option value='popular'>Popular</option>
                 </select>
               </div>
             </div>

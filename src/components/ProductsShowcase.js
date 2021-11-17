@@ -5,54 +5,47 @@ import { Link } from 'react-router-dom';
 const ProductsShowcase = () => {
   return (
     <div className='showcase-container'>
-      <Container fluid>
-        <Row className='showcase-flex-col pt-2 px-2' style={{ gap: '0.5rem' }}>
-          <Col className='showcase-1A showcase-col'>
-            <h1>top picks</h1>
-            <Link to='/products'>
-              <Button variant='outline-light' className='showcase-btn'>
-                Shop Now &#8594;
-              </Button>
-            </Link>
-          </Col>
-          <Col className='showcase-2A showcase-col'>
-            <h1>new arrivals</h1>
-            <Link to='/products'>
-              <Button variant='outline-light' className='showcase-btn'>
-                Shop Now &#8594;
-              </Button>
-            </Link>
-          </Col>
-        </Row>
-        <Row className='showcase-row pt-2 pb-3 px-2'>
-          <Col className='showcase-1B showcase-col'>
-            <p>Flashy Deals</p>
-            <Link to='/products'>
-              <Button variant='outline-light' className='showcase-btn'>
-                Shop Now &#8594;
-              </Button>
-            </Link>
-          </Col>
-          <Col className='showcase-2B showcase-col'>
-            <p>Best Products</p>
-            <Link to='/products'>
-              <Button variant='outline-light' className='showcase-btn'>
-                Shop Now &#8594;
-              </Button>
-            </Link>
-          </Col>
-          <Col className='showcase-3B showcase-col'>
-            <p>All Products</p>
-            <Link to='/products'>
-              <Button
-                variant='outline-light'
-                className='showcase-btn showcase-3B-only-black-btn'
-              >
-                Shop Now &#8594;
-              </Button>
-            </Link>
-          </Col>
-        </Row>
+      <div className='showcase-headers'>
+        <h1>our picks to match your needs</h1>
+        <p>
+          We provide you best electronics at best price with fitting discounts.
+          Get yours at minimum price rate.
+        </p>
+      </div>
+      <Container fluid className='showcase-grid-container'>
+        <Col className='showcase-2A showcase-col'>
+          <h1>top rated</h1>
+          <Link to='/products'>
+            <Button variant='outline-light' className='showcase-btn'>
+              Shop Now &#8594;
+            </Button>
+          </Link>
+        </Col>
+        <div
+          style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}
+        >
+          <Row className='showcase-flex-col px-2'>
+            <Col className='showcase-1A showcase-col'>
+              <h1>top picks</h1>
+              <Link to='/products'>
+                <Button variant='outline-light' className='showcase-btn'>
+                  Shop Now &#8594;
+                </Button>
+              </Link>
+            </Col>
+          </Row>
+          <Row className='showcase-row px-2'>
+            <Col className='showcase-1B showcase-col'>
+              <h2>Deals</h2>
+            </Col>
+            <Col className='showcase-2B showcase-col'>
+              <h2>Sales</h2>
+            </Col>
+            <Col className='showcase-3B showcase-col'>
+              <h2>Gears</h2>
+            </Col>
+          </Row>
+        </div>
       </Container>
     </div>
   );
