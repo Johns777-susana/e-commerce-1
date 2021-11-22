@@ -11,7 +11,7 @@ const Category = ({ sortByCategory, allProducts, sortByBrands }) => {
 
   return (
     <>
-      <Container>
+      <Container className='categories'>
         <h6 className='category-header'>Categories</h6>
         <Row className='category-row'>
           <Col style={{ marginBottom: '1rem' }}>
@@ -38,7 +38,7 @@ const Category = ({ sortByCategory, allProducts, sortByBrands }) => {
           </Col>
         </Row>
       </Container>
-      <Container>
+      <Container className='brands'>
         <h6 className='brand-header'>Brands</h6>
         <Row className='brand-row'>
           <Col>

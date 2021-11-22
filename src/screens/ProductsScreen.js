@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import Product from '../components/Product';
 import NavbarSecondary from '../components/navbar/NavbarSecondary';
@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import Benefits from '../components/Benefits';
 import Category from '../components/Category';
 import products from '../data/products';
+import { FaSearch } from 'react-icons/fa';
 
 const ProductsScreen = () => {
   const [productsItems, setProductsItems] = useState(products);
@@ -60,6 +61,19 @@ const ProductsScreen = () => {
     }
   };
 
+  // sort by letter
+  const sortByLetter = (e) => {
+    // let newArray = products.sort((a, b) => {
+    //   if (a.name > b.name) {
+    //     return 1;
+    //   } else {
+    //     return -1;
+    //   }
+    // });
+    // setProductsItems(newArray);
+    console.log(e);
+  };
+
   return (
     <>
       <div className='products-screen-container'>
@@ -83,6 +97,16 @@ const ProductsScreen = () => {
           </div>
           <div style={{ width: '100%' }}>
             <div className='sort-products'>
+              <form className='search-form'>
+                <input
+                  type='search'
+                  placeholder='search here...'
+                  onChange={(e) => sortByLetter(e.target.value)}
+                />
+                <button type='submit' className='search-btn'>
+                  <FaSearch />
+                </button>
+              </form>
               <div>
                 <label>Order by :</label>
                 <select onChange={sortByOrder}>

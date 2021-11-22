@@ -76,7 +76,7 @@ const products = [
   },
   {
     _id: 6,
-    name: 'Xbox 512GB SSD Console - Wireless Controller',
+    name: 'Xbox 512GB SSD with Wireless Controller',
     image: '/images/console.jpg',
     price: 260,
     desc: 'Great console with flexibility and best gaming experience',

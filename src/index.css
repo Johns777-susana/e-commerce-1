@@ -14,7 +14,31 @@ body {
   font-size: 1.25rem;
 }
 
+/*To remove cross from input*/
+input[type='search']::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type='search']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
 /*<-- Header Section*/
+.nav-abs {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
 .navbar {
   font-family: 'Zen Maru Gothic', sans-serif;
   display: flex;
@@ -24,13 +48,10 @@ body {
   transition: 0.6s ease-in-out;
   z-index: 9;
   width: 100%;
+  background: transparent;
 }
 
 .navbar:hover {
-  background-color: #fff;
-}
-
-.navbar:focus {
   background-color: #fff;
 }
 
@@ -60,7 +81,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.9rem;
-  color: #fff;
+  color: #000;
   letter-spacing: 0.3rem;
 }
 
@@ -70,7 +91,7 @@ body {
 }
 
 .nav-brand h4 {
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 600;
@@ -89,7 +110,7 @@ body {
 
 .nav-icons a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 .fi {
@@ -185,8 +206,85 @@ body {
   color: #000;
 }
 
+/*Parallex Part*/
+.parallex-container {
+  position: relative;
+}
+
+.flex {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.first-parallex {
+  background-image: url('./assets/parallex-img/watch.jpg');
+  height: 100vh;
+}
+
+.second-parallex {
+  height: 600px;
+  background-image: url('./assets/parallex-img/headphone.jpg');
+}
+
+.third-parallex {
+  height: 600px;
+  background-image: url('./assets/parallex-img/phone4.jpg');
+}
+
+.fourth-parallex {
+  height: 600px;
+  background-image: url('./assets/parallex-img/camera.jpg');
+}
+
+.parallex-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  gap: 1rem;
+}
+
+.parallex-details h1 {
+  font-size: 4rem;
+  font-family: 'Archivo Black', sans-serif;
+  letter-spacing: 5px;
+}
+
+.parallex-details h6 {
+  font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.justify-left {
+  justify-content: left !important;
+  align-items: flex-start !important;
+}
+
+.justify-right {
+  justify-content: right !important;
+  align-items: flex-end !important;
+  text-align: right;
+}
+
+.parallex-btn {
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  letter-spacing: 3px;
+}
+
+.border-thin {
+  border: 1px solid #343a40;
+}
+
 /*Slider part*/
-.carousel-container {
+/* .carousel-container {
   width: 100%;
   position: absolute;
   top: 0;
@@ -254,12 +352,11 @@ body {
   border-radius: 50%;
   width: 6px !important;
   height: 6px !important;
-}
+} */
 
 /*Product Show-Case Part*/
 .showcase-container {
-  margin-top: 10rem;
-  margin-bottom: 4rem;
+  padding: 5rem 0;
 }
 
 .showcase-headers {
@@ -270,6 +367,7 @@ body {
   font-family: 'Archivo Black', sans-serif;
   letter-spacing: 2px;
   font-size: 2.7rem;
+  color: #343a40;
 }
 
 .showcase-headers p {
@@ -334,10 +432,10 @@ body {
 }
 
 .showcase-2A {
-  background-image: url('./assets/headphone.jpg');
+  background-image: url('./assets/phone.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   text-align: center;
   padding-top: 0.2rem;
 }
@@ -352,7 +450,7 @@ body {
 }
 
 .showcase-2B {
-  background-image: url('./assets/phone.jpg');
+  background-image: url('./assets/headphone2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -680,6 +778,7 @@ body {
   margin-right: 2rem;
   margin-left: 2rem;
   align-items: center;
+  margin-bottom: 0.75rem;
 }
 
 .sort-products select {
@@ -689,19 +788,68 @@ body {
   margin-left: 0.5rem;
 }
 
+.search-form {
+  display: flex;
+  border: 1px solid #dee2e6;
+  align-items: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.search-form:hover {
+  border: 1px solid red;
+}
+
+.search-form:hover > .search-btn {
+  color: red;
+}
+
+.search-form input {
+  padding: 10px 0.75rem;
+  padding-right: 5rem !important;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.search-form input::placeholder {
+  text-transform: capitalize;
+}
+
+.search-btn {
+  border: none;
+  background: transparent;
+  color: #868e96;
+  padding-right: 10px;
+  padding-bottom: 4px;
+}
+
 /*Category Part*/
 .category-container {
   max-width: 200px;
   width: 100%;
 }
 
+.categories,
+.brands {
+  border: 1.5px solid #dee2e6;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding-top: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.brands {
+  padding-bottom: 1rem;
+}
+
 .category-header {
-  padding-bottom: 0.75rem;
-  background-color: #dee2e6;
   padding: 10px 0;
   padding-left: 15px !important;
   padding-right: 8rem !important;
-  font-size: 0.7875rem;
+  font-size: 0.9rem;
+  border-left: 2px solid red;
+  letter-spacing: 1px;
+  margin-left: 0.5rem;
 }
 
 .category-list {
@@ -725,6 +873,7 @@ body {
   padding-bottom: 5px;
   padding-left: 10px !important;
   width: 100%;
+  color: #868e96;
 }
 
 .category-btn:hover {
@@ -732,12 +881,13 @@ body {
 }
 
 .brand-header {
-  padding-bottom: 0.75rem;
-  background-color: #dee2e6;
   padding: 10px 0;
   padding-left: 15px !important;
   padding-right: 8rem !important;
-  font-size: 0.7875rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  border-left: 2px solid red;
+  margin-left: 0.5rem;
 }
 
 .brand-list {
@@ -760,6 +910,7 @@ body {
   padding-bottom: 5px;
   padding-left: 10px !important;
   width: 100%;
+  color: #868e96;
 }
 
 .brand-btn:hover {
