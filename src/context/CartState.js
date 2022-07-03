@@ -1,13 +1,13 @@
-import React, { useEffect, useReducer } from 'react';
+import React, { useEffect, useReducer } from "react";
 import {
   ADD_CART,
   DECREASE_PRODUCT,
   DELETE_CART,
   GET_TOTAL,
   INCREASE_PRODUCT,
-} from '../actions/CartActions';
-import CartReducers from '../reducers/CartReducers';
-import CartContext from './cart-context';
+} from "../actions/CartActions";
+import CartReducers from "../reducers/CartReducers";
+import CartContext from "./cart-context";
 
 const initialState = {
   cartItems: [],
@@ -16,7 +16,7 @@ const initialState = {
   totalPrice: 0,
   wholePrice: 0,
 };
-
+// changes
 const CartState = ({ children }) => {
   const [state, dispatch] = useReducer(CartReducers, initialState);
 
